@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whack - a - mole</title>
+    <link rel="icon" href="./src/mole.svg">
+    <link rel="stylesheet" href="./src/mole.css" />
+  </head>
+  <body>
+    <h1>whack a mole <span id="score">0</span></h1>
+
+    <h1><span id="misses"></span></h1>
+
+    <div id="youlost">
+      <h1>Sooy You Lost.</h1>
+      <button class="btn" onclick="location.reload()">restart</button>
+    </div>
+
+    <div id="game">
+      <div class="box">
+        <span id="rat1" class="rat"><img src="./src/mole.svg" alt="" /></span>
+        <div class="hole"><img src="./src/dirt.svg" alt="" /></div>
+      </div>
+      <div class="box">
+        <span id="rat2" class="rat"><img src="./src/mole.svg" alt="" /></span>
+        <div class="hole"><img src="./src/dirt.svg" alt="" /></div>
+      </div>
+      <div class="box">
+        <span id="rat3" class="rat"><img src="./src/mole.svg" alt="" /></span>
+        <div class="hole"><img src="./src/dirt.svg" alt="" /></div>
+      </div>
+      <div class="box">
+        <span id="rat4" class="rat"><img src="./src/mole.svg" alt="" /></span>
+        <div class="hole"><img src="./src/dirt.svg" alt="" /></div>
+      </div>
+      <div class="box">
+        <span id="rat5" class="rat"><img src="./src/mole.svg" alt="" /></span>
+        <div class="hole"><img src="./src/dirt.svg" alt="" /></div>
+      </div>
+      <div class="box">
+        <span id="rat6" class="rat"><img src="./src/mole.svg" alt="" /></span>
+        <div class="hole"><img src="./src/dirt.svg" alt="" /></div>
+      </div>
+    </div>
+
+    <div id="youwin">
+      <h1>Congratulations! YOU WIN.</h1>
+      <img src="./src/trophy-winner.png" alt="Trophy" />
+      <button class="btn" onclick="location.reload()">restart</button>
+    </div>
+
+    <audio src="./src/tink.wav" id="sound1"></audio>
+    <audio src="./src/tom.wav" id="sound2"></audio>
+    <audio src="./src/crowd-cheer-ii-6263.mp3" id="clapping"></audio>
+
+    <script src="./src/mole.js"></script>
+  </body>
+</html>
